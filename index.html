@@ -142,7 +142,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
@@ -170,18 +170,19 @@
   <div class="columns is-centered has-text-centered">
     <div class="column is-three-fifths">
       <h2 class="title is-3">VISTA Future Frames Denoising Results</h2>
-      <p class="has-text-left">
-        Future obervation predictions from the VISTAPlan World Model, conditioned on the
-        input trajectory and current observations. Demonstrates the 
-        VISTAPlan’s ability to accurately predict future observations based on
-        the provided context, highlighting its robust trajectory prediction capabilities.
-      </p>
+      
       <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
         <source src="./static/videos/vista_denoise.mp4"
                 type="video/mp4">
       </video>
+      <p class="has-text-left">
+        Denoising of future frames predictions using VISTA. Frames are predicted according to the input trajectory
+        shown as color coded. Unlike single-step models, VISTA predicts future states simultaneously, eliminating compounding errors.
+      </p>
     </div>
   </div>
+
+  <hr>
 
   <div class="container is-max-desktop">
     <div class="hero-body">
